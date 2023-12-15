@@ -32,9 +32,7 @@
 
           <template slot="content">
             <p class="category">待命船隻</p>
-            <h3 class="title">
-              201
-            </h3>
+            <h3 class="title">201</h3>
           </template>
 
           <template slot="footer">

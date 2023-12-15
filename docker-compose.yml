@@ -1,0 +1,12 @@
+version: '2'
+services:
+  fish:
+    restart: always
+    image: nginx:1.16.1-alpine
+    ports: 
+      - 80:80
+    volumes:
+      - ./fish/dist/:/usr/share/nginx/html/
+      - ./fish/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      # - ./fish/server.crt:/etc/ssl/certs/server.crt
+      # - ./fish/server.key:/etc/ssl/certs/server.key

@@ -3,12 +3,19 @@
     <md-table v-model="currentVessel" :table-header-color="tableHeaderColor">
       <md-table-row slot="md-table-row" slot-scope="{ item }">
         <md-table-cell md-label="ID">{{ item.id }}</md-table-cell>
-        <md-table-cell md-label="船隻名稱">{{ item.properties.ShipName }}</md-table-cell>
+        <md-table-cell md-label="船隻名稱">{{
+          item.properties.ShipName
+        }}</md-table-cell>
         <md-table-cell md-label="船團名稱"> -- </md-table-cell>
         <md-table-cell md-label="船隻類型">漁船</md-table-cell>
         <md-table-cell md-label="狀態">正常</md-table-cell>
-        <md-table-cell md-label="位置">{{ item.properties.Longitude }}, {{ item.properties.Latitude }}</md-table-cell>
-        <md-table-cell md-label="最近紀錄時間">{{ item.properties.Record_Time }}</md-table-cell>
+        <md-table-cell md-label="位置"
+          >{{ item.properties.Longitude }},
+          {{ item.properties.Latitude }}</md-table-cell
+        >
+        <md-table-cell md-label="最近紀錄時間">{{
+          item.properties.Record_Time
+        }}</md-table-cell>
         <md-table-cell md-label="警報"> -- </md-table-cell>
         <md-table-cell md-label="詳細" class="cursor-pointer">
           <a @click="$router.push('/user')">詳細</a>
@@ -19,7 +26,7 @@
 </template>
 
 <script>
-import { mockData } from '@/mockData/mock-data.js'
+import { mockData } from "@/mockData/mock-data.js";
 
 export default {
   name: "ordered-table",
@@ -67,10 +74,11 @@ export default {
   },
   computed: {
     currentVessel() {
-      const data = this.vessel.filter(v => v.properties.ShipName && v.properties.Ship_and_Cargo_Type == 31)
-      console.log(data)
-      return data
+      const data = this.vessel.filter(
+        (v) => v.properties.ShipName && v.properties.Ship_and_Cargo_Type == 31
+      );
+      return data;
     },
-  }
+  },
 };
 </script>

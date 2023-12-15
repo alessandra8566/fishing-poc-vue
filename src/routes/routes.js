@@ -47,8 +47,8 @@ const routes = [
       {
         path: "notifications",
         name: "Notifications",
-        component: Timeline
-      }
+        component: Timeline,
+      },
     ],
   },
 ];

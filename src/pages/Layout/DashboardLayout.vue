@@ -25,7 +25,7 @@
       </sidebar-link>
       <sidebar-link to="/genform">
         <md-icon>content_paste</md-icon>
-      <p>報告產生器</p>
+        <p>報告產生器</p>
       </sidebar-link>
       <sidebar-link to="/notifications">
         <md-icon>notifications</md-icon>

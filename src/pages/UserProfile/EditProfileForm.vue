@@ -138,8 +138,7 @@ export default {
       city: null,
       country: null,
       code: null,
-      aboutme:
-        "remarks",
+      aboutme: "remarks",
     };
   },
 };

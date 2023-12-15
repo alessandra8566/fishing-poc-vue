@@ -4,7 +4,8 @@
   </div>
 </template>
 
-// <script>
+//
+<script>
 // import { API_KEY } from "./API_KEY";
 // import { Loader, LoaderOptions } from "google-maps";
 
@@ -90,4 +91,5 @@
 //     });
 //   },
 // };
-// </script>
+//
+</script>
